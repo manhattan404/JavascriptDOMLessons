@@ -44,9 +44,32 @@ console.log(itemList.firstChild); // This will log the 'text' node just like chi
 // firstElementChild (You can use this instead)
 console.log(itemList.firstElementChild); // This will give  the actual li
 
-//You can take it and do somethign with it
+//You can take it and do something with it
 itemList.firstElementChild.textContent = 'Hello 1'; // This will change the first item in list to 'Hello 1'
 
+// If you want to take the last one
+console.log(itemList.lastChild); // This will log a 'text' node
+
+// Use this instead
+console.log(itemList.lastElementChild); // this will log the last li
+
+// Do something with it
+itemList.lastElementChild.textContent = 'Hello 4' // This will change last item text to 'Hello 4'
+
+// SIBLINGS
+
+//nextSibling
+
+console.log(itemList.nextSibling); // this will log 'text node'
+
+//nextElementSibling
+console.log(itemList.nextElementSibling); // This will log null because itemList doesn't have an actual sibling lol
+
+// previousSibling
+console.log(itemList.previousSibling); // will log 'text'
+console.log(itemList.previousElementSibling); // will log h2
+
+itemList.previousElementSibling.style.color = 'green'; //will change 
 
 
 
